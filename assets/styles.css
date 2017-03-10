@@ -1,0 +1,28 @@
+body {
+	background-image: url("../assets/background.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+p, label {
+	font-size: 20px;
+	color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	font-family: 'Audiowide', cursive;
+}
+
+h1 {
+	font-family: 'Audiowide', cursive;
+	color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    text-align: center;
+    font-size: 50px;
+}
+
+button {
+	font-size: 15px;
+	color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+	font-family: 'Audiowide', cursive;
+}

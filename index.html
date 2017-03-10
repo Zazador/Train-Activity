@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Activity</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+	<script src="assets/rps.js"></script>
+	<script src="assets/config.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  var config2 = {
+  	apiKey: config.apiKey,
+  	authDomain: config.authDomain,
+  	databaseURL: config.databaseURL,
+  	storageBucket: config.storageBucket,
+  	messagingSenderId: config.messagingSenderId
+  };
+  firebase.initializeApp(config2);
+</script>
+<link href="https://fonts.googleapis.com/css?family=Baloo|Luckiest+Guy|Audiowide" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>Train Activity</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-3" id="nameInput">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name">
+				</div>
+				<button type="button" class="btn btn-success" id="start">Start
+				</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3" id="player1"></div>
+			<div class="col-md-3" id="verdict"></div>
+			<div class="col-md-3" id="player2"></div>
+		</div>
+
+	</div>
+</body>
+</html>
